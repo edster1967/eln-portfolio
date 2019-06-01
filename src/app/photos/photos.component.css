@@ -2,3 +2,8 @@
     color: #63E4F2;
     padding-bottom: 1em;
 }
+
+.photo-carousel-img{
+    width: 100%;
+    display: block;
+}

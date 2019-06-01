@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { PhotosComponent } from './photos/photos.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 const appRoutes: Routes = [
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes, {enableTracing: true}
     ),
+    CarouselModule.forRoot(),
 
   ],
   providers: [],

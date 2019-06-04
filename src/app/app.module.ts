@@ -13,6 +13,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { ContactComponent } from './contact/contact.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 const appRoutes: Routes = [
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'photos', component: PhotosComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'projects', component: ProjectsComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
@@ -32,7 +34,8 @@ const appRoutes: Routes = [
     PhotosComponent,
     PageNotFoundComponent,
     ContactComponent,
-    PhotoGalleryComponent
+    PhotoGalleryComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

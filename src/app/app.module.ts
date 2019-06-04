@@ -11,12 +11,15 @@ import { PhotosComponent } from './photos/photos.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { ContactComponent } from './contact/contact.component';
+import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'photos', component: PhotosComponent},
+  {path: 'contact', component: ContactComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
@@ -27,7 +30,9 @@ const appRoutes: Routes = [
     HeaderComponent,
     HomeComponent,
     PhotosComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ContactComponent,
+    PhotoGalleryComponent
   ],
   imports: [
     BrowserModule,

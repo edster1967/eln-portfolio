@@ -1,22 +1,25 @@
 <header class="">
-    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary">
-        <span class="navbar-brand mb-0 h1">Edward Natividad Jr.</span>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="/photos" routerLinkActive="active">Photos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
+  <nav #nav class="navbar fixed-top navbar-dark navbar-expand-sm bg-primary">
+    <span class="navbar-brand mb-0 h1">Edward Natividad Jr.</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="nav.collapse =!nav.collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" navbar-collapse" [ngClass]="{collapse: !nav.collapse}" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/photos" routerLinkActive="active">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
-

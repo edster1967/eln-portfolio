@@ -3,11 +3,11 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
 
 
 @Component({
-  selector: 'app-photos',
-  templateUrl: './photos.component.html',
-  styleUrls: ['./photos.component.css']
+  selector: 'app-photo-gallery',
+  templateUrl: './photo-gallery.component.html',
+  styleUrls: ['./photo-gallery.component.css']
 })
-export class PhotosComponent implements OnInit {
+export class PhotoGalleryComponent implements OnInit {
 
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
@@ -60,4 +60,3 @@ export class PhotosComponent implements OnInit {
   }
 
 }
-

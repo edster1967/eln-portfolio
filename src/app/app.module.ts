@@ -14,16 +14,10 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { ContactComponent } from './contact/contact.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
-const appRoutes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'photos', component: PhotosComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'projects', component: ProjectsComponent},
-  {path: '**', component: PageNotFoundComponent}
-];
+
 
 @NgModule({
   declarations: [
@@ -39,11 +33,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     CarouselModule.forRoot(),
-    NgxGalleryModule,
-    RouterModule.forRoot(
-      appRoutes, {enableTracing: true}
-    ),
+    NgxGalleryModule
 
   ],
   providers: [],

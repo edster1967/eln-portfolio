@@ -1,0 +1,15 @@
+ngx-gallery /deep/ .ngx-gallery-arrow {
+    color: #026873;
+    background-color: azure;
+}
+
+#photo-carousel-banner{
+    color: #63E4F2;
+    padding-bottom: 1em;
+    background-color: #038C8C;
+}
+
+.carousel-main{
+    background-color:black;
+    padding: 1em 0;
+}

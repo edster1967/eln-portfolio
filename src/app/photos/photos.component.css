@@ -9,15 +9,6 @@
     display: block;
 }
 
-/* .basic-container{
-    width: 80vw;
-} */
-
-ngx-gallery /deep/ .ngx-gallery-arrow {
-    color: #026873;
-    background-color: azure;
-}
-
 #photo-card-gallery{
     padding: 1em;
     background-color: #C5CCD9;
@@ -36,13 +27,3 @@ ngx-gallery /deep/ .ngx-gallery-arrow {
 }
 
 
-
-carousel{
-    width: 60vw;
-}
-
-
-/* .carousel-main{
-    width: 70vw;
-    margin: auto;
-} */

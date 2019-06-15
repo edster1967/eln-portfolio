@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
   {path: 'photos', component: PhotosComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'projects', component: ProjectsComponent},
+  {path: 'photo-gallery/:id', component: PhotoGalleryComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

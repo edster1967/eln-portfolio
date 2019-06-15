@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
 import { PhotoGalleryService } from './photo-gallery.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-photo-gallery',
@@ -12,11 +14,19 @@ export class PhotoGalleryComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
   galleryTitle: string;
-  constructor(private galleryService: PhotoGalleryService) { }
+  galleryName: string;
+
+  constructor(private galleryService: PhotoGalleryService, private route: ActivatedRoute) { }
 
   ngOnInit() {
 
-    this.galleryTitle = 'Antelope Canyon Gallery';
+
+    this.route.paramMap.subscribe(params => {
+      this.galleryName = params.get('gallery');
+    });
+
+    console.log('this is the value of gallery passed: ' + this.galleryName);
+
 
     this.galleryOptions = [
       {
@@ -32,7 +42,17 @@ export class PhotoGalleryComponent implements OnInit {
       }
     ];
 
-    this.galleryImages = this.galleryService.getACGalleryImages();
+    if (this.galleryName === 'antelope-canyon') {
+      this.galleryTitle = 'Antelope Canyon Gallery';
+      this.galleryImages = this.galleryService.getACGalleryImages();
+    } else if (this.galleryName === 'monument-valley') {
+      this.galleryTitle = 'Monument Valley Gallery';
+      this.galleryImages = this.galleryService.getMVGalleryImages();
+    } else if (this.galleryName === 'sedona') {
+      this.galleryTitle = 'Sedona Gallery';
+      this.galleryImages = this.galleryService.getSedonaGalleryImages();
+    }
+
   }
 
 }

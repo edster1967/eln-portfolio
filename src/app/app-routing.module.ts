@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   {path: 'photos', component: PhotosComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'projects', component: ProjectsComponent},
-  {path: 'photo-gallery/:id', component: PhotoGalleryComponent},
+  {path: 'photo-gallery/:gallery', component: PhotoGalleryComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "eln-portfolio",
+    "default": "eln-portfolio"
+  }
+}

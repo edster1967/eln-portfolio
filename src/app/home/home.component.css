@@ -1,27 +1,40 @@
-.header-img{
-    width: 85%;
-    border-radius: 0 0 40px 40px;
+.header-img {
+    width: 100%;
+    /* border-radius: 0 0 40px 40px; */
     box-shadow: 0 5px 10px -2px #012326;
-    
 }
 
-#home-banner{
-    background-image: linear-gradient(#012326, #026873 );
-    color: #63E4F2;
-    padding-bottom: 1em;
-} 
-
-#home-banner h1{
-    padding-top:.5em;
+.hero-wrap {
+    text-align: center;
+    background-image: url("../../assets/img/hero_banner_1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
-#about-copy{ 
+.hero-wrap .container {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+.hero-wrap .container img {
+    padding-top: 10px;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.about-copy {
     box-shadow: 0 5px 10px -2px #9BB1BF;
 }
 
-#about{
-   
+.about {
     background-color: white;
     padding: 2em;
 }
 
+@media screen and (max-width: 600px) {
+    .hero-wrap .container {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+    }
+}

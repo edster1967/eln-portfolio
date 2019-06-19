@@ -3,16 +3,9 @@ ngx-gallery /deep/ .ngx-gallery-arrow {
     background-color: transparent;
 }
 
-#photo-carousel-banner{
-    color: #053A40;
-    padding-bottom: 5px;
-    background-color: #C5CCD9;
-    
-}
-
 .carousel-main{
     background-color:black;
-    padding: 1em 0;
+    padding: 3em 0 2em 0;
 }
 
 #photo-carousel-banner h1{

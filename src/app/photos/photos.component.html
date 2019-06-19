@@ -1,87 +1,64 @@
-<div id="photo-banner" class="text-center">
-    <h1>My photos</h1>
+<div class=" hero-wrap bg-white text-center">
+    <div class="container text-light">
+        <h1>My photos</h1>
+    </div>
+    <div class="photo-carousel">
+        <div class="container">
+            <carousel>
+                <slide>
+                    <img src="assets/img/wolfcreek.jpg" alt="first slide" class="photo-carousel-img">
+                </slide>
+                <slide>
+                    <img src="assets/img/squire_castle.jpg" alt="third slide" class="photo-carousel-img">
+                </slide>
+                <slide>
+                    <img src="assets/img/bellagio_ftn.jpg" alt="third slide" class="photo-carousel-img">
+                </slide>
+                <slide>
+                    <img src="assets/img/vegas_sign.jpg" alt="third slide" class="photo-carousel-img">
+                </slide>
+            </carousel>
+        </div>
+
+    </div>
 </div>
 
-<div id="photo-carousel">
-    <div class="container d-flex align-items-center flex-column">
-        <carousel>
-            <slide>
-                <img src="assets/img/wolfcreek.jpg" alt="first slide" class="photo-carousel-img">
-            </slide>
-            <slide>
-                <img src="assets/img/squire_castle.jpg" alt="third slide" class="photo-carousel-img">
-            </slide>
-            <slide>
-                <img src="assets/img/bellagio_ftn.jpg" alt="third slide" class="photo-carousel-img">
-            </slide>
-            <slide>
-                <img src="assets/img/vegas_sign.jpg" alt="third slide" class="photo-carousel-img">
-            </slide>
-        </carousel>
-    </div>
-    
-</div>
+
+
+
 
 <div id="photo-card-gallery">
-    <div class="container d-flex align-items-center flex-column">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="card-deck">
                 <div class="card">
-                    <img src="/assets/img/ac_gallery.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Antelope Canyon</h5>
-                        <p class="card-text">My adventure in Antelope Canyon in AZ</p>
-                        <a routerLink="/photo-gallery/antelope-canyon" class="btn btn-primary">View Gallery</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/assets/img/mv_gallery.jpg" alt="">
-                    <div class="card-body">
+                  <img class="card-img-top" src="/assets/img/ac_gallery.jpg" alt="antelope-canyon-trail">
+                  <div class="card-body">
                         <h5 class="card-title">Monument Valley</h5>
                         <p class="card-text">My adventure in Monument Valley in AZ</p>
+                  </div>
+                  <div class="card-footer">
                         <a routerLink="/photo-gallery/monument-valley" class="btn btn-primary">View Gallery</a>
-                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-4">
                 <div class="card">
-                    <img src="/assets/img/sedona_eln.jpg" alt="">
-                    <div class="card-body">
+                  <img class="card-img-top" src="/assets/img/mv_gallery.jpg" alt="Card image cap">
+                  <div class="card-body">
+                        <h5 class="card-title">Monument Valley</h5>
+                        <p class="card-text">My adventure in Monument Valley in AZ</p>
+                        
+                  </div>
+                  <div class="card-footer">
+                        <a routerLink="/photo-gallery/monument-valley" class="btn btn-primary">View Gallery</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="/assets/img/sedona_eln.jpg" alt="Card image cap">
+                  <div class="card-body">
                         <h5 class="card-title">Sedona</h5>
                         <p class="card-text">My adventure in Sedona in AZ</p>
+                  </div>
+                  <div class="card-footer">
                         <a routerLink="/photo-gallery/sedona" class="btn btn-primary">View Gallery</a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
               </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-        </div> -->
-        </div>
-    </div>
 </div>

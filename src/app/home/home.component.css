@@ -1,6 +1,5 @@
 .header-img {
     width: 100%;
-    /* border-radius: 0 0 40px 40px; */
     box-shadow: 0 5px 10px -2px #012326;
 }
 
@@ -10,6 +9,7 @@
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
+    height: 60vw;
 }
 
 .hero-wrap .container {
@@ -36,5 +36,13 @@
     .hero-wrap .container {
         padding-top: 100px !important;
         padding-bottom: 100px !important;
+    }
+    .hero-wrap {
+        text-align: center;
+        background-image: url("../../assets/img/hero_banner_1.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 100vw;
     }
 }

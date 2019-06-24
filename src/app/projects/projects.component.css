@@ -1,17 +1,30 @@
 .hero-wrap {
-    text-align: center;
-    background-image: url("../../assets/img/ares-bg-1.jpg");
-    background-position: center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0, 0, 0, 0.55) url("../../assets/img/project_banner_1.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: scroll;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 100vh;
+    color: #fff;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 15px 10px 15px;
+    max-height: 60vw;
 }
 
 .hero-wrap .container {
-    padding-top: 250px !important;
-    padding-bottom: 250px !important;
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+}
+
+.project-main {
+    padding: 1em;
+    background: #fff;
+}
+
+.card {
+    box-shadow: 10px 10px 5px #9BB1BF;
+}
+
+.card-footer a {
+    margin-right: 1em;
 }
 
 @media screen and (max-width: 600px) {

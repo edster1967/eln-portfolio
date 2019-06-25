@@ -9,7 +9,7 @@
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
-    height: 60vw;
+    min-height: 50vw;
 }
 
 .hero-wrap .container {
@@ -18,9 +18,10 @@
 }
 
 .hero-wrap .container img {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     width: 30%;
     border-radius: 50%;
+    padding-bottom: 10px;
 }
 
 .about-copy {

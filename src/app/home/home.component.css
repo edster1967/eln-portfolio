@@ -9,7 +9,7 @@
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
-    min-height: 50vw;
+    max-height: 600px;
 }
 
 .hero-wrap .container {
@@ -44,6 +44,5 @@
         background-position: center center;
         background-size: cover;
         background-attachment: scroll;
-        height: 100vw;
     }
 }

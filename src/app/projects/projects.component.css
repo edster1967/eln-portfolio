@@ -6,7 +6,7 @@
     text-rendering: optimizeLegibility;
     margin: 0;
     padding: 15px 10px 15px;
-    max-height: 60vw;
+    max-height: 600px;
 }
 
 .hero-wrap .container {
@@ -24,7 +24,7 @@
 }
 
 .card-footer a {
-    margin-right: 1em;
+    margin: .5em 1em 0 0;
 }
 
 @media screen and (max-width: 600px) {

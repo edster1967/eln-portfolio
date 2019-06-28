@@ -1,4 +1,4 @@
-.hero-wrap{    
+.hero-wrap {
     text-align: center;
     background-image: url("../../assets/img/hero_banner_1.jpg");
     background-position: center center;
@@ -6,26 +6,34 @@
     background-attachment: scroll;
     padding-top: 50px;
     padding-bottom: 50px;
-} 
+}
 
-
-.photo-carousel-img{
+.photo-carousel-img {
     width: 100%;
     display: block;
 }
 
-#photo-card-gallery{
+#photo-card-gallery {
     padding: 1em;
     background-color: #C5CCD9;
 }
 
-.card img{
-    width: 100%;
+.card img {
     height: 200px;
+    width: 100%;
 }
 
-.card{
+.card {
     box-shadow: 10px 10px 5px #9BB1BF;
+    max-width: 336px;
 }
 
+.card-deck {
+    justify-content: center
+}
 
+@media screen and (max-width: 600px) {
+    .card {
+        margin: auto;
+    }
+}
